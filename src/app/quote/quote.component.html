@@ -11,7 +11,7 @@
               <div *ngFor='let quote of quotes;let i = index'>
 
                   <li>
-                      "{{quote.name}}"  Author: {{quote.author}},   Posted by {{quote.user}} on
+                      "{{quote.name}}"  Author {{quote.author}},   Posted by {{quote.user}} on
                       {{quote.completeDate|date}}
                       <br>
                       <button (click)="upvote(i)" class="btn btn-primary btn-xs">
