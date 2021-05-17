@@ -1,0 +1,19 @@
+#btn{
+background-color: green;
+}
+.lab{
+    color: blue;
+    
+}
+#heading{
+    color: darkblue;
+    text-align: center;
+    font-size: 50px;
+}
+.form {
+    margin-left: 50em;
+}
+#user{
+    width: 50%;
+    height: 100%;
+}
