@@ -1,7 +1,8 @@
 # Quote
 # Description: 
-# The-Quote ordering web application.
+
 * The-Quote is an angular application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+
 ## Author:
 # Gabriel Ayuel
 
