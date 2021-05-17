@@ -1,0 +1,36 @@
+<div class="container">
+  <!-- <h2>List of Quotes</h2> -->
+  <div class="col-md-6">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
+  <hr>
+
+  <ul>
+      <div class="row">
+          <div class="col-md-6">
+              <div *ngFor='let quote of quotes;let i = index'>
+
+                  <li>
+                      "{{quote.name}}"  Author: {{quote.author}},   Posted by {{quote.user}} on
+                      {{quote.completeDate|date}}
+                      <br>
+                      <button (click)="upvote(i)" class="btn btn-primary btn-xs">
+                          <i class="up"></i>{{ quote.upvotes }}<img src="https://techjoomla.com/media/zoo/images/jlike_0110c7a06bb71e822e51e2856e577fda.png"
+                              height="50" width="50">
+                      </button> &nbsp;&nbsp;
+                      <button (click)="downvote(i)" class="btn btn-primary btn-xs">
+                          <i class="down"></i>{{ quote.downvotes }} <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-1owt1Uumghdnyv-hgOAYwI_dF5irIr3Ig&usqp=CAU"
+                              height="50" width="50">
+                      </button> &nbsp;&nbsp;
+                  </li>
+
+                  <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+                  <app-quote-detail *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+
+              </div>
+          </div>
+
+          
+      </div>
+  </ul>
+</div>

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Katibeh&display=swap');
+body{
+    font-family: 'san serif', cursive;
+    background-color:rgb(221, 243, 200);
+}
+p,label{
+    font-size:30 px;
+}
+li{
+    font-weight: bold;
+    font-size:20 px;
+}
+input{
+    font-size: 20px;
+}
