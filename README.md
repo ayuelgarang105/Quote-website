@@ -14,7 +14,6 @@
 Topics
 Resources
 
-This project was generated with [(https://github.com/Benardakaka/The-Quote-Application)] version 10.2.0.
 
 ## Development server
 
@@ -29,4 +28,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 # MIT License
 
-* Copyright (c) 2020 Benard Akaka
+* Copyright (c) 2020 Gabriel Ayuel
