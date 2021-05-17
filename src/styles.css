@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Katibeh&display=swap');
 body{
     font-family: 'san serif', cursive;
-    background-color:rgb(221, 243, 200);
+    background-color:rgb(220, 230, 211);
 }
 p,label{
     font-size:30 px;
@@ -14,4 +14,9 @@ li{
 }
 input{
     font-size: 20px;
+}
+hr{
+    margin-left: 30em;
+    margin-right: 30em;
+    color: red;
 }
