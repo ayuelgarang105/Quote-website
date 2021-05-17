@@ -1,20 +1,20 @@
-
-  <div class="container-fluid" id="newq">
-    <h2 class="text-center">WELCOME QUOTES WEBSITE</h2>
-    <hr>
+<hr>
+<h2 id="heading" class="text-center">WELCOME QUOTES WEBSITE</h2>
+<hr>
+  <div class="form" id="newq">
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
             
             <br>
         
-            <label for="name">Enter your favorite quote:</label><br>
+            <label class="lab" for="name">Enter your favorite quote:</label><br>
             <textarea class="form-control" id="user" rows="4" [(ngModel)]="newQuote.name" name="name" #description="ngModel" required></textarea>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
               
             </div>
             <br>
 
-            <label for="author">Author:</label><br>
+            <label class="lab" for="author">Author:</label><br>
             <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
               
@@ -22,14 +22,14 @@
 
             <br>
             <div class=" ">
-              <label for="user">Your name:</label><br>
-              <input type="text" class="form-control" id="user" [(ngModel)]="newQuote.user" name="user" #user="ngModel"
+              <label class="lab" for="user">Your name:</label><br>
+              <input type="text" class="form-control" id="users" [(ngModel)]="newQuote.user" name="user" #user="ngModel"
                   required>
                 <div [hidden]="user.valid || user.pristine" class="alert alert-danger"></div>
           </div>
             <br>
             <div class=" ">
-                <label for="complete">Date:</label><br>
+                <label class="lab" for="complete">Date:</label><br>
                 <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel"
                     required>
             </div>
@@ -40,3 +40,4 @@
         <button type="Submit" id="btn" class="btn btn-success btn-lg">Add Quote</button>
     </form>
 </div>
+
